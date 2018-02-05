@@ -65,3 +65,25 @@ The URL defined in the actionList can contain placeholders which will be replace
 *    {STATUS_ID}	will be replaced with the filter value of the status
 
 
+# Installation
+The `PO_MenuActions.js` script provided here, needs to be placed in the folder `<contentstation>/integrations/`.
+
+Then edit the file `<contentstation>/config.js`
+and add the script to the `plugins` section, sub-section 'Publication Overview'
+
+	plugins: {
+    	contentStation: [
+      		// 'sdk/samples/sample-1.js',
+      		// 'sdk/samples/sample-2.js'
+      		'integrations/ObjectContextMenuActions.js',
+      		//'integrations/PO_MenuActions.js',
+      		//"sdk/samples/po-ui-sdk-sample.js"
+    	],
+    	publicationOverview: [
+     		'integrations/PO_MenuActions.js',
+    		"sdk/samples/po-ui-sdk-sample.js"
+    	]
+  	},
+  	
+It might be required to clear the browser cache before the added menu entries are visable.
+
