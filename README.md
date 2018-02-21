@@ -19,7 +19,7 @@ a wwsetting line looks like:
 
 The lines from that section can be converted to the new defintion by making some small changes.
         	    
-*    replace:  `'<PublicationOverviewAction'` with '{'
+*   replace:  `'<PublicationOverviewAction'` with '{'
 *   replace:  ending '/>' with '}'
 *   replace:  'tooltip=' with 'label:'
 *   replace: the '=' behind each field with a ':'
@@ -52,7 +52,13 @@ where:
 		- html pages using POST/GET will need to use 'external'
 		- html/javascript pages that use ajax can use internal or dialog
 *   subMenu	 -> if set, this action will be under the specified submenu
-   
+*   userGroups -> (comma seperated list of matching userGroups) if set and if user is member of the listed groups,
+   					then the menu will be active.
+   					
+   					
+
+  
+#### Placeholders   
   
 The URL defined in the actionList can contain placeholders which will be replaced on execution time:
 
@@ -80,10 +86,14 @@ and add the script to the `plugins` section, sub-section 'Publication Overview'
       		//"sdk/samples/po-ui-sdk-sample.js"
     	],
     	publicationOverview: [
-     		'integrations/PO_MenuActions.js',
-    		"sdk/samples/po-ui-sdk-sample.js"
+     		'integrations/PO_MenuActions.js'
     	]
   	},
   	
 It might be required to clear the browser cache before the added menu entries are visable.
 
+
+# Configuration
+
+Add the converted lines to the array in the variable `po_menuList`
+as can be seen in the sample.
