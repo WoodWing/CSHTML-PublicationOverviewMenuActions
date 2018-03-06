@@ -3,7 +3,9 @@
 
 
 This script will help to convert old-style (CS9 and older) ContentStation `<PublicationOverviewActions>` 
-   to CS11.7 `Publication-Overview` actions.
+   to CS11 `Publication-Overview` actions.
+
+The Publication Overview action menus are available from CS11.7 and higher.   
    
 #### Documentation / sample code for other actions
 The functionality of this script is based on the SDK documentation `sdk/po-ui-sdk.md` and the sample code in `sdk/samples/po-ui-sdk-sample.js`
