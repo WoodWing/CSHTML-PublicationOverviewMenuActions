@@ -26,7 +26,8 @@ The lines from that section can be converted to the new defintion by making some
 *   replace:  'tooltip=' with 'label:'
 *   replace: the '=' behind each field with a ':'
    add a comma between each field
-*   replace &amp; with &	
+*   replace ``&amp;`` with &
+*   add a comma between each option
 
 The line above will then look like:
 
